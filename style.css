@@ -1,0 +1,282 @@
+:root
+{
+	--ie-blue: #2cc600;
+	--win-gray: #f1efe2;
+	--win-border-light: #ffffff;
+	--win-border-dark: #808080;
+	--link-blue: #0000cc;
+}
+
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma", "Arial", sans-serif;
+}
+
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 12px;
+	padding: 10px;
+}
+
+header
+{
+	background-color: var(--win-gray);
+	border: 2px solid;
+	border-color: var(--win-border-light) var(--win-border-dark) var(--win-border-dark) var(--win-border-light);
+	padding: 12px 15px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brand
+{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-e
+{
+	font-size: 36px;
+	font-weight: bold;
+	color: #2cc600;
+	text-shadow: 1px 1px 0px #000;
+	font-style: italic;
+}
+
+.brand-text h1
+{
+	font-size: 18px;
+	color: var(--ie-blue);
+}
+
+.brand-text p
+{
+	font-size: 11px;
+	color: #555;
+}
+
+.search-bar
+{
+	background: #fff;
+	border: 2px solid var(--win-border-dark);
+	padding: 6px;
+	display: flex;
+	gap: 5px;
+}
+
+	.search-bar input[type="text"]
+	{
+		width: 240px;
+		padding: 4px;
+		font-size: 12px;
+		border: 1px solid #777;
+	}
+
+	.search-bar button
+	{
+		padding: 4px 10px;
+		background-color: var(--win-gray);
+		border: 2px solid;
+		border-color: var(--win-border-light) var(--win-border-dark) var(--win-border-dark) var(--win-border-light);
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	.search-bar button:active
+	{
+		border-color: va(--win-border-dark) var(--win-border-light) var(--win-border-light) var(--win-border-dark);
+	}
+
+.lang-selector
+{
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: #fff;
+	padding: 4px 8px;
+	border: 1px solid var(--win-border-dark);
+	font-size: 11px;
+}
+
+.lang-btn
+{
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 11px;
+	padding: 2px 4px;
+	color: var(--link-blue);
+}
+
+	.lang-btn:hover
+	{
+		text-decoration: underline;
+	}
+
+	.lang-btn.active
+	{
+		font-weight: bold;
+		color: #000;
+		background-color: #e0e0e0;
+	}
+
+.main-layout
+{
+	display: grid;
+	grid-template-columns: 200px 1fr 240px;
+	gap: 15px;
+}
+
+.sidebar-left
+{
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+	.sidebar-left h3
+	{
+		background-color: var(--ie-blue);
+		color: white;
+		padding: 3px 6px;
+		font-size: 11px;
+		margin-bottom: 8px;
+	}
+
+	.sidebar-left ul
+	{
+		list-style: none;
+	}
+
+		.sidebar-left ul li
+		{
+			margin-bottom: 6px;
+			padding-bottom: 4px;
+			border-bottom: 1px dotted #ccc;
+		}
+
+			.sidebar-left ul li a
+			{
+				color: var(--link-blue);
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+				.sidebar-left ul li a:hover 
+				{
+					text-decoration: underline;
+				}
+
+.main-content h2 {
+	color: #b22222;
+	border-bottom: 2px solid #b22222;
+	padding-bottom: 3px;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.quick-links
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.link-card
+{
+	background: #fff;
+	border: 1px solid #bbb;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+}
+
+.link-card:hover
+{
+	background-color: #ffffe0;
+	border-color: #666;
+}
+
+.link-icon
+{
+	font-size: 18px;
+}
+
+.news-box
+{
+	background: #fffdf0;
+	border: 1px solid #e6db55;
+	padding: 10px;
+}
+
+.news-item
+{
+	margin-bottom: 8px;
+}
+
+.news-item span
+{
+	color: #ff4500;
+	font-weight: bold;
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.sidebar-right
+{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.widget
+{
+	border: 1px solid var(--win-border-dark);
+	background: var(--win-gray);
+	padding: 10px;
+}
+
+.widget-title
+{
+	font-weight: bold;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 2px;
+}
+
+.weather-info
+{
+	text-align: center;
+	padding: 8px 0;
+}
+
+.weather-temp
+{
+	font-size: 26px;
+	font-weight: bold;
+	color: #333;
+}
+
+footer
+{
+	margin-top: 20px;
+	border-top: 1px solid #ccc;
+	padding-top: 8px;
+	text-align: center;
+	color: #666;
+	font-size: 11px;
+}

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowStone StartPage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script src="translate.js"></script>
+    <header>
+        <div class="brand">
+            <div class="logo-e">g</div>
+            <div class="brand-text">
+                <h1>FakeMSN Portal</h1>
+                <p id="sub-title">Bem-vindo ao GlowStone!</p>
+            </div>
+        </div>
+
+        <div class="lang-selector">
+            <span style="font-weight: bold; color: #555;">🌐:</span>
+            <button class="lang-btn" id="btn-pt" onclick="setLanguage('pt')">PT</button> |
+            <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button> |
+            <button class="lang-btn" id="btn-es" onclick="setLanguage('es')">ES</button>
+        </div>
+
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <div class="search-bar">
+                <input type="text" name="q" id="search-input" placeholder="Pesquise na Web..." required>
+                <button type="submit" id="search-btn">Buscar</button>
+            </div>
+        </form>
+    </header>
+
+    <div class="main-layout">
+
+        <aside class="sidebar-left">
+            <h3 id="lbl-channels">CANAIS INTERNET</h3>
+            <ul>
+                <li><a href="https://news.google.com" target="_blank" id="ch-news">📰 Notícias</a></li>
+                <li><a href="https://mail.google.com" target="_blank" id="ch-mail">📧 Webmail</a></li>
+                <li><a href="https://www.youtube.com" target="_blank" id="ch-videos">📺 Vídeos e Lazer</a></li>
+                <li><a href="https://github.com" target="_blank" id="ch-dev">💻 Programação</a></li>
+                <li><a href="https://www.wikipedia.org" target="_blank" id="ch-wiki">📚 Enciclopédia</a></li>
+                <li><a href="https://www.jogos360.com.br" target="_blank" id="ch-games">🎮 Jogos Flash</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2 id="lbl-shortcuts">SEUS ATALHOS MAIS VISITADOS</h2>
+            <div class="quick-links">
+                <a href="https://www.google.com" class="link-card" target="_blank">
+                    <span class="link-icon">🔍</span>
+                    <span>Google</span>
+                </a>
+                <a href="https://www.youtube.com" class="link-card" target="_blank">
+                    <span class="link-icon">📺</span>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://github.com" class="link-card" target="_blank">
+                    <span class="link-icon">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://reddit.com" class="link-card" target="_blank">
+                    <span class="link-icon">💬</span>
+                    <span>Reddit</span>
+                </a>
+            </div>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="widget">
+                <div class="widget-title" id="lbl-weather-title">🌤️ CLIMA EM TEMPO REAL</div>
+                <div class="weather-info">
+                    <p style="font-weight: bold; color: #555;">Fortaleza, CE</p>
+                    <div class="weather-temp">30°C</div>
+                    <p id="weather-desc">Ensolarado com brisa marítima</p>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-title" id="lbl-sys-status">ℹ️ STATUS DO SISTEMA</div>
+                <p><strong>Engine:</strong> Chromium V8</p>
+                <p><strong id="lbl-speed">Status:</strong> <span id="val-speed">Sem Lentidão</span></p>
+                <p style="margin-top: 5px; color: green; font-weight: bold;" id="val-online">● Conectado com Segurança</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p id="lbl-footer">GlowStone StartPage Studio</p>
+    </footer>
+</body>
+</html>
